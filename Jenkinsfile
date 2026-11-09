@@ -2,12 +2,6 @@ pipeline {
     agent any
 
     stages {
-        stage('Checkout') {
-            steps {
-                git branch: 'main',
-                    url: 'https://github.com/Mithila7777/jenkins-java-app.git'
-            }
-        }
 
         stage('Build and Test') {
             steps {
